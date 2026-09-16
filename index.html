@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Expense Tracker</h1>
+
+        <!-- Expense Form -->
+        <form id="expenseForm">
+
+            <input
+                type="text"
+                id="expenseName"
+                placeholder="Expense name"
+                required
+            >
+
+            <input
+                type="number"
+                id="expenseAmount"
+                placeholder="Amount"
+                required
+            >
+
+            <select id="expenseCategory">
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <button type="submit">Add Expense</button>
+
+        </form>
+
+
+        <!-- Search and Filter -->
+        <div class="filters">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search expense..."
+            >
+
+            <select id="filterCategory">
+                <option value="All">All Categories</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Other">Other</option>
+            </select>
+
+        </div>
+
+
+        <!-- Total -->
+        <h2>
+            Total: ₹<span id="totalAmount">0</span>
+        </h2>
+
+
+        <!-- Expense List -->
+        <div id="expenseList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
